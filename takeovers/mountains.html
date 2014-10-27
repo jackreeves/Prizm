@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Module</title>
+  <link href="assets/animate.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+  <style>
+  a:link {
+	  color:white;
+	  text-decoration:underline;
+  }
+#text1 {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 0s;
+  -ms-animation-duration: 3s;
+  -ms-animation-delay: 0s;
+  }
+  #text2 {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 0.5s;
+  -ms-animation-duration: 3s;
+  -ms-animation-delay: 0.5s;
+  }
+  #text3 {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 3s;
+  -ms-animation-duration: 3s;
+  -ms-animation-delay: 3s;
+  }
+  .outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+@media all  and (min-width: 800px){
+  .middle {
+    	background-image:url(img/goggles3.png) !important;
+  }
+}
+  @media all  and (min-width: 1150px){
+  body {
+background-size: cover;
+}
+
+}
+@media all and (max-width: 800px) and (min-width: 520px){
+  .middle {
+    	background-image:url(img/goggles2.png) !important;
+  }
+
+}
+@media all  and (max-height: 176px){
+	h1{font-size: 2.5em !important;
+	line-height:0.6em !important;}
+	body {background-image:url(img/bg176.jpg) !important;}
+}
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+background-image:url(img/goggles.png);
+	background-size: 100% auto;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+h1{line-height:0.8em;}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+	text-align:center;
+	font-family:'Decima W01 Light';
+
+
+}
+.button {
+	background-color:black;
+	display:inline;
+	padding:10px;
+	font-size:1.2em;
+}
+#menu {
+	background-color:;
+	height:30px;
+	position:fixed;
+	width:100%;
+	top:0px;
+	left:0px;
+	z-index:999;
+	}
+
+body {
+	background-image:url(img/bg.jpg);
+	background-position: top;
+
+}
+	#prizmlogoImg {
+	background-image:url(img/prizmlogo.png);
+	width: 73px;
+height: 39px;
+background-repeat: no-repeat;
+    display:block;
+}
+#oakleylogoImg {
+	background-image:url(img/oakleylogo.png);
+	width: 90px;
+height: 36px;
+background-repeat: no-repeat;
+    display:block;
+}
+
+.prizmlogo {
+	float:right;
+	width: 73px;
+height: 39px;
+margin: 10px;
+}
+.oakleylogo {
+	float:left;
+	width: 90px;
+height: 36px;
+margin: 10px;
+margin-top:12px;
+}
+  </style>
+</head>
+
+<body>
+<div id="menu">
+  <div class="oakleylogo"><a href="http://www.oakley.com/en/prizm/snow" target="_blank" alt="Oakley"><span id="oakleylogoImg"></span></a></div>
+  <div class="prizmlogo"><a href="http://www.oakley.com/en/prizm/snow" target="_blank" alt="Prizm"><span id="prizmlogoImg"></span></a></div>
+  </div>
+<div class="goggles"></div>
+<div class="outer animated fadeInUpBig">
+<div class="middle">
+<div class="inner">
+
+<h1 id="text1" class="animated fadeInUpBig">THE DAWN OF</h1>
+<h1 id="text2" class="animated fadeInUpBig">A NEW TECHNOLOGY</h1>
+<p id="text3" class="animated fadeIn button"><span id="text4"><a href="mountains2.html">TRY ON PRIZM&#8482;</a></span></p>
+</div>
+</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="assets/jquery.fittext.js"></script>
+<script src="assets/jquery.lettering.js"></script>
+<script src="jquery.textillate.js"></script>
+<script type="text/javascript" src="http://fast.fonts.net/jsapi/af0b5bf5-8d22-40c2-9412-cb63173b7aec.js"></script>
+<script>
+
+   $('h1')
+   .fitText(1.6);
+$('.button').hover(function() {
+	$('#text4').addClass('animated pulse');
+});
+
+	</script>
+</body>
+</html>

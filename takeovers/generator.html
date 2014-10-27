@@ -1,0 +1,377 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prizm Iframe Generator</TITLE>
+
+<META NAME="WEB_CONTENT_TYPE" CONTENT="Other">
+
+<META NAME="AUTHOR" CONTENT="Jim Stiles">
+
+<META NAME="DESCRIPTION" CONTENT="JavaScript Examples">
+
+<link rel=stylesheet type=text/css href="http://jdstiles.com/java/hs.css">
+
+<script type="text/JavaScript">
+
+<!--
+
+defaultStatus = "Uncle Jims Website Designs                     http://jdstiles.com"
+
+//--></script>
+
+<script type="text/JavaScript">
+
+<!--
+
+function generate(){
+
+
+
+csscontentpart = ""
+
+iframeName = ""
+
+iframeTags = ""
+
+iframeURL  = ""
+
+iframeWidth = ""
+
+iframeHeight = ""
+
+iframeBorder = ""
+
+iframeScroll = ""
+
+iframeTrans = ""
+
+
+
+
+
+if(document.ibars.iframeName.value != ""){csscontentpart += " " + "name=\"" + document.ibars.iframeName.value + "\""}
+
+if(document.ibars.iframeURL.value != ""){csscontentpart += " " + "src=\"" + document.ibars.iframeURL.value}
+
+if(document.ibars.iframeTags.value != ""){csscontentpart += document.ibars.iframeTags.value}
+
+if(document.ibars.iframeWidth.value != ""){csscontentpart +=  "\"" + " " + "width=\"" + document.ibars.iframeWidth.value + "\""}
+
+if(document.ibars.iframeHeight.value != ""){csscontentpart += " " + "height=\"" + document.ibars.iframeHeight.value + "\""}
+
+if(document.ibars.iframeBorder.value != ""){csscontentpart += " " + "frameborder=\"" + document.ibars.iframeBorder.value + "\""}
+
+if(document.ibars.iframeScroll.value != ""){csscontentpart += " " + "scrolling=\"" + document.ibars.iframeScroll.value + "\""}
+
+if(document.ibars.iframeTrans.value != ""){csscontentpart += " " + "ALLOWTRANSPARENCY=\"" + document.ibars.iframeTrans.value + "\""}
+
+
+
+if(iframeName != ""){"name=" + iframeName + "\" "}
+
+if(iframeTags != ""){"name=" + iframeTags + "\" "}
+
+if(iframeURL != ""){"src=" + iframeURL + "\" "}
+
+if(iframeWidth != ""){"width=" + iframeWidth + "\" "}
+
+if(iframeHeight != ""){"height=" + iframeHeight + "\" "}
+
+if(iframeBorder != ""){"frameborder=" + iframeBorder + "\" "}
+
+if(iframeScroll != ""){"scrolling=" + iframeScroll + "\" "}
+
+if(iframeTrans != ""){"ALLOWTRANSPARENCY=" + iframeTrans + "\" "}
+
+
+
+cssstart = '<IFRAME'
+
+cssend = '>' + "\n" + '</IFRAME>' + "\n"
+
+document.ibars.scrollcode.value = cssstart + csscontentpart + cssend;
+
+document.getElementById('test').innerHTML = cssstart + csscontentpart + cssend;
+}
+
+//--></script>
+
+<script type="text/JavaScript">
+
+<!--
+
+var ie = document.all ? 1 : 0
+
+var ns = document.layers ? 1 : 0
+
+if(ie){
+
+document.write('<style type="text/css">')
+
+document.write('.textfield {font-size:8pt; font-family:verdana; color:#000000; font-weight:bold;}\n')
+
+document.write('.hexfield {font-size:8pt; font-family:verdana; color:#000000; font-weight:bold;}\n')
+
+document.write('.buttons {background-color: #808080; border-color: #CCCCCC; border-width: 2; color: #FFFFFF; font-size: 9pt; font-family: verdana, arial, helvetica; font-weight: bold;}\n')
+
+document.write('</style>')
+
+}
+
+//-->
+
+</script>
+
+</HEAD>
+
+<body>
+
+<center></center><br>
+
+<div align="center">
+
+        <form name="ibars">
+
+                <table border="1" bordercolor="#8b0000" width="443" cellspacing="0" cellpadding="0" bgcolor="#e0ffff" align="center">
+
+                  <tr bgcolor="#e0ffff">
+
+              <td width="100%">
+
+                <table border="0" width="100%" cellspacing="0" cellpadding="5">
+
+                  <tr>
+
+                    <td width="100%">
+
+
+
+                    <p><b><font  color="#000066">Oakley Prizm Iframe Generator</font></b></p>
+
+                    </td>
+
+                  </tr>
+
+                </table>
+
+                <table border="0" width="100%" cellspacing="1" cellpadding="0">
+
+                  <tr>
+
+                    <td bgcolor="#e0ffff" valign="top">
+
+                      <table border="0" width="100%" cellspacing="3" cellpadding="0">
+
+                        <tr>
+
+
+
+                        <td width="100%" align="center"></td>
+
+                        </tr>
+
+                      </table>
+
+                    </td>
+
+
+
+                  <td width="52%" bgcolor="#e0ffff" valign="top" align="center">
+
+                    <table border="0" width="100%" cellspacing="0" cellpadding="3">
+
+                      <tr bgcolor="#e0ffff">
+
+                        <td align="right">
+
+                          <p><b><font size="2">Iframe Name:</font></b></p>
+
+
+                        </td>
+
+                        <td width="46%">
+
+                          <input class="hexfield" type="text" name="iframeName" value="example-name" size="20">
+
+
+                        </td>
+
+                      </tr>
+
+                      <tr bgcolor="#e0ffff">
+                        <td align="right"> <p><b><font size="2">Analytics Tags:</font></b></p></td>
+                        <td><input class="hexfield" type="text" name="iframeTags" value="?cm_mmc=direct-_-oct14-_-Prizm-_-HTML5banner" size="20"></td>
+                      </tr>
+                      <tr bgcolor="#e0ffff">
+
+                        <td width="54%" align="right">
+
+                          <p><b><font size="2">Background:</font></b></p>
+
+                        </td>
+
+                        <td width="46%">
+
+                           <select class="hexfield" name="iframeURL">
+
+                            <option value="http://oakleyapp.com/prizm/takeovers/" selected="selected">transparent</option>
+
+                            <option value="http://oakleyapp.com/prizm/takeovers/mountains.html">mountains</option>
+
+                          </select>
+
+                        </td>
+
+                      </tr>
+
+                      <tr bgcolor="#e0ffff">
+
+                        <td width="54%" align="right">
+
+                          <p><b><font size="2">Width:</font></b></p>
+
+                        </td>
+
+                        <td width="46%">
+
+                          <input class="hexfield" type="text" name="iframeWidth" value="970" size="20">
+
+                        </td>
+
+                      </tr>
+
+                      <tr bgcolor="#e0ffff">
+
+                        <td width="54%" align="right">
+
+                          <p><b><font size="2">Height:</font></b></p>
+
+                        </td>
+
+                        <td width="46%">
+
+                          <input class="hexfield" type="text" name="iframeHeight" value="250" size="20">
+
+                        </td>
+
+                      </tr>
+
+                      <tr bgcolor="#e0ffff">
+
+                        <td width="54%" align="right">
+
+                          <p>&nbsp;</p>
+
+                        </td>
+
+                        <td width="46%">
+
+                          <p>
+                            <input hidden class="hexfield" type="text" name="iframeBorder" value="no" size="20">
+                          </p>
+                          <p>
+                          <input hidden class="hexfield" type="text" name="iframeTrans" value="true">
+                          </p>
+
+                        </td>
+
+                      </tr>
+
+                      <tr bgcolor="#e0ffff">
+
+                        <td width="54%" align="right">
+
+                          <p>&nbsp;</p>
+
+                        </td>
+
+                        <td width="46%">
+
+                          <input hidden class="hexfield" type="text" name="iframeScroll" value="no" size="20">
+
+                          </select>
+
+                        </td>
+
+                      </tr>
+
+                    </table>
+
+                   </td>
+
+                  </tr>
+
+                </table>
+
+              </td>
+
+            </tr>
+
+          </table>
+
+                      <table border="0" width="443" cellspacing="0" cellpadding="4">
+
+                        <tr>
+
+                          <td align="right">
+
+                            <input type="button" value="Generate Code" class="buttons" onClick="generate()" name="button">
+
+                          </td>
+
+                        </tr>
+
+                      </table>
+
+                <table border="0" width="443" cellspacing="0" cellpadding="1">
+
+                  <tr>
+
+              <td width="100%" align="center" bgcolor="#990000">
+
+                <table border="0" width="100%" cellspacing="0" cellpadding="5">
+
+                  <tr bgcolor="#00ced1">
+
+                    <td width="100%" align="center">
+
+
+
+                    <p><b><font size="2">Iframe Code:</font></b>
+
+                              <textarea rows="8" name="scrollcode" cols="46"></textarea>
+
+                      </p>
+
+                    </td>
+
+                  </tr>
+
+                </table>
+
+              </td>
+
+            </tr>
+
+          </table>
+
+        </form>
+
+            </div>
+
+<br>
+<div id="outer" style="width: 100%;text-align: center;">
+<p><b><font size="2">Example:</font></b>
+
+<div class="test" id="test" style="display: inline-block;border:black 1px solid;">
+
+</div>
+</div>
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>twentytwenty</title>
+   <style>
+		html, body { height:100%; overflow:hidden;  margin:0; padding:0; font-family:Verdana, Geneva, sans-serif;}
+		div.container_img {
+   position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+		.twentytwenty-overlay {
+
+}
+#menu {
+	background-color:;
+	height:30px;
+	position:fixed;
+	width:100%;
+	top:0px;
+	left:0px;
+	z-index:999;
+	}
+	#prizmlogoImg {
+	background-image:url(img/prizmlogo.png);
+	width: 73px;
+height: 39px;
+background-repeat: no-repeat;
+    display:block;
+}
+#oakleylogoImg {
+	background-image:url(img/oakleylogo.png);
+	width: 90px;
+height: 36px;
+background-repeat: no-repeat;
+    display:block;
+}
+
+.prizmlogo {
+	float:right;
+	width: 73px;
+height: 39px;
+margin: 10px;
+}
+.oakleylogo {
+	float:left;
+	width: 90px;
+height: 36px;
+margin: 10px;
+margin-top:12px;
+}
+body {
+	background-image:url(img/bg.jpg);
+	background-position: top;
+
+}
+@media all  and (max-height: 176px){
+	h1{font-size: 2.5em !important;
+	line-height:0.6em !important;}
+	body {background-image:url(img/bg176.jpg) !important;}
+}
+@media all and (max-width: 800px) and (min-width: 520px){
+  .middle {
+    	background-image:url(img/goggles2.png) !important;
+  }
+
+}
+ @media all  and (min-width: 1150px){
+  body {
+background-size: cover;
+}
+
+}
+	</style>
+      <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+</head>
+  <body>
+  <div id="menu">
+  <div class="oakleylogo"><a href="http://www.oakley.com/en/prizm/snow" target="_blank" alt="Oakley"><span id="oakleylogoImg"></span></a></div>
+  <div class="prizmlogo"><a href="http://www.oakley.com/en/prizm/snow" target="_blank" alt="Prizm"><span id="prizmlogoImg"></span></a></div>
+  </div>
+  <div id="container1" class="container_img ">
+  <img src="img/before.png" />
+<img src="img/after.png" />
+        </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="jquery.event.move.js"></script>
+    <script src="jquery.twentytwenty.js"></script>
+    <script>
+$(window).load(function(){
+  $("#container1").twentytwenty();
+});
+
+    </script>
+  </body>
+</html>

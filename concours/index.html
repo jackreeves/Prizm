@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>France Facebook Competition</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Loading Bootstrap -->
+<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+<!-- Loading Flat UI Pro -->
+<link href="css/flat-ui-pro.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+@font-face {
+	font-family: "Decima W01 Regular";
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/14362fee-173a-4eba-8f32-8ffad94aac01.eot?#iefix");
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/14362fee-173a-4eba-8f32-8ffad94aac01.eot?#iefix") format("eot"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/cca393b3-55ab-493c-b556-3fc48d276de9.woff") format("woff"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/4a9c81be-deac-4e6f-a0d9-ee4275ba3508.ttf") format("truetype"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/d11a50e3-2142-47de-a769-43d45b180c6b.svg#d11a50e3-2142-47de-a769-43d45b180c6b") format("svg");
+}
+@font-face {
+	font-family: "Decima W01 Bold";
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/dc6cdb24-affe-4316-900d-b61ac6563946.eot?#iefix");
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/dc6cdb24-affe-4316-900d-b61ac6563946.eot?#iefix") format("eot"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/e6d3fc1a-5a35-4ee4-bb15-b490c98e595a.woff") format("woff"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/bf850639-0c73-4ddd-ae16-367b0351711d.ttf") format("truetype"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/bdfbbdce-8013-46ab-9c52-8772ee6ab243.svg#bdfbbdce-8013-46ab-9c52-8772ee6ab243") format("svg");
+}
+@font-face {
+	font-family: "Decima W01 Bold Italic";
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/c815925b-a6f3-452e-87d7-6ea0986933b2.eot?#iefix");
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/c815925b-a6f3-452e-87d7-6ea0986933b2.eot?#iefix") format("eot"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/eb3d6b1f-0a19-4908-b432-07273903e833.woff") format("woff"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/7e23f5f6-256a-428b-9177-eab1326b33bd.ttf") format("truetype"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/7acc978a-0a6c-42ab-a14a-9bbb13039170.svg#7acc978a-0a6c-42ab-a14a-9bbb13039170") format("svg");
+}
+@font-face {
+	font-family: "Decima W01 Italic";
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/131340ad-26e4-4d6f-9cae-82eece08d06b.eot?#iefix");
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/131340ad-26e4-4d6f-9cae-82eece08d06b.eot?#iefix") format("eot"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/2cd72746-522d-4e60-be3f-bad859021472.woff") format("woff"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/1da35f4d-0db4-4b21-ad48-9b855bede20a.ttf") format("truetype"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/fe64733c-70f8-4e62-9c5d-5ffd6600e237.svg#fe64733c-70f8-4e62-9c5d-5ffd6600e237") format("svg");
+}
+@font-face {
+	font-family: "Decima W01 Light";
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/ad546947-9515-4152-b05f-ac4a763ebf04.eot?#iefix");
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/ad546947-9515-4152-b05f-ac4a763ebf04.eot?#iefix") format("eot"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/9d8e1b47-5856-4239-a5a9-bebd8fa98f69.woff") format("woff"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/3e5e35fb-4f2a-4c56-bdb0-48085ce95e4e.ttf") format("truetype"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/89cf4390-016b-4456-871f-1ce996687122.svg#89cf4390-016b-4456-871f-1ce996687122") format("svg");
+}
+@font-face {
+	font-family: "Decima W01 Light Italic";
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/63379bde-8cd8-4449-948a-c8c0a8697fa3.eot?#iefix");
+	src: url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/63379bde-8cd8-4449-948a-c8c0a8697fa3.eot?#iefix") format("eot"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/322d2d71-b660-4e39-ad52-854329f9c287.woff") format("woff"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/62f4e200-9550-48f5-bf2a-2e9d8a08946f.ttf") format("truetype"), url("https://secure142.inmotionhosting.com/~oakley9/franceapp/fonts/Fonts/5224001b-2108-4f25-8dbe-c2763c571d1b.svg#5224001b-2108-4f25-8dbe-c2763c571d1b") format("svg");
+}
+#intro {
+	background: url(img/bg-prizm-hero-9.jpg) 50% 0 fixed;
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	padding: 70px 0px 20px 0px;
+	text-align: center;
+}
+#home {
+	background: url(img/bg-athletes.jpg) 50% 0 fixed;
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	padding: 50px 0;
+}
+.box1 {
+	background: url(img/box1.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.box2 {
+	background: url(img/box2.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.box3 {
+	background: url(img/box3.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.button {
+	cursor: pointer;
+
+}
+#footer {
+	background: #222 50% 0 fixed;
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	padding: 20px 0;
+	color: #fff;
+}
+.mainheadline {
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 48px;
+	border: 4px solid #FFF;
+	padding: 20px 20px 10px 20px;
+	line-height: 1em;
+	display: -webkit-inline-box;
+	letter-spacing: 0.2em;
+}
+.subheadline {
+	color: #FFF;
+	font-size: 24px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	line-height: 1em;
+}
+.downarrow {
+	padding-top: 50px;
+}
+.button:active{color:#FFF;}
+#xxx {
+	outline: white solid 3px;
+	padding: 10px 10px 5px 10px;
+	color: rgba(0,0,0,1);
+	font-weight: bold;
+	border: none;
+	margin: 0;
+	background: rgba(255,255,255,1);
+	font-size: 19pt;
+}
+.footer {
+	color: #fff;
+	font-size: small;
+}
+#xxx:hover {
+	outline: white solid 3px;
+	background: rgba(255,255,255,0.1);
+	color: rgba(255,255,255,1);
+}
+a:active {
+	color: #FFF;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #FFF;
+}
+a:hover {
+	color: #FFF;
+}
+.decimathin {
+	font-family: Decima W01 Light, Verdana, Geneva, sans-serif;
+}
+.decimabold {
+	font-family: Decima W01 Bold, Verdana, Geneva, sans-serif;
+}
+.decimareg {
+	font-family: Decima W01 Regular, Verdana, Geneva, sans-serif;
+}
+.textinbox {
+	background: black;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+</style>
+<script>
+
+$(document).ready(function(){
+   // cache the window object
+
+
+		   $window = $(window);
+
+   $('section[data-type="background"]').each(function(){
+     // declare the variable to affect the defined data-type
+     var $scroll = $(this);
+
+      $(window).scroll(function() {
+        // HTML5 proves useful for helping with creating JS functions!
+        // also, negative value because we're scrolling upwards
+        var yPos = -($window.scrollTop() / $scroll.data('speed'));
+
+        // background position
+        var coords = '50% '+ yPos + 'px';
+
+        // move the background
+        $scroll.css({ backgroundPosition: coords });
+      }); // end window scroll
+   });  // end section function
+}); // close out script
+
+document.createElement("section");
+
+
+</script>
+</head>
+<body>
+<!-- Section 1 -->
+<section id="intro" data-speed="6" data-type="background">
+  <div class="container">
+  <img style="padding-bottom: 50px;" src="img/combined-logo.png" alt="logo" /><br>
+  <div class="mainheadline decimareg">Découvrez Prizm™<br />et gagnez un séjour</div>
+    <p><br><br>
+      <span class="subheadline decimathin">Grâce à Prizm™, vous ne verrez plus la neige de la même façon. Découvrez la différence avec Prizm™ et tentez de remporter un weekend pour quatre personnes dans une des meilleures stations de sports d'hiver françaises.</span>
+    </p>
+    <a href="https://woobox.com/vxu53z" target="_self">
+    <p> <span id="xxx" class="decimareg button">PARTICIPEZ MAINTENANT</span></p>
+    </a>
+    <div class="downarrow"><a href="#more"><img width="50px" src="img/arrow-207-256.png" alt="..." /></a> </div>
+  </div>
+</section>
+
+<!-- Section 3 -->
+<section id="home" data-speed="4" data-type="background" style="background-position: 50% -188px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"><a name="more" href="https://www.youtube.com/watch?v=_sT8AYTCyWo" alt="Watch Video">
+        <div class="box1"></div>
+        <div class="textinbox"> <span class="decimathin" style="text-align:center;">VOIR LA VIDÉO PRIZM&#8482;</span> </div>
+        </a> </div>
+      <!-- /.span4 -->
+      <div class="col-sm-4"><a href="https://fr.oakley.com/fr/prizm/snow" alt="Visit Microsite">
+        <div class="box2"></div>
+        <div class="textinbox"> <span class="decimathin" style="text-align:center;">VISITER LE SITE Prizm&#8482;</span> </div>
+      </div>
+      </a>
+      <!-- /.span4 -->
+      <div class="col-sm-4"><a href="https://fr.oakley.com/fr/prizm/snow#prizm-shop" alt="Prizm Shop">
+        <div class="box3"></div>
+        <div class="textinbox"> <span class="decimathin" style="text-align:center;">COMMANDER DES ECRANS Prizm&#8482;</span> </div>
+      </div>
+      </a> </div>
+    <!-- /.span4 -->
+  </div>
+  </div>
+</section>
+<!-- Section 3 -->
+<section id="footer" data-speed="2" data-type="background">
+  <div class="container">
+    <p class="footer decimathin">Copyright 2014 Oakley, Inc. Tous droits réservés<span class="pull-right">La participation à ce concours est encadrée par les <a href="http://woobox.com/offers/rules/vxu53z" >termes et conditions</a> d'utilisation d'Oakley ainsi que par sa politique de la protection des données personnelles.</span></p>
+  </div>
+</section>
+
+<!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+<script src="js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="https://fast.fonts.net/jsapi/af0b5bf5-8d22-40c2-9412-cb63173b7aec.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/flat-ui-pro.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+</body>
+</html>
